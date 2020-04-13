@@ -139,7 +139,7 @@ class Screen:
         for line in last_to_first:
             for tank in self.tanks:
                 try:
-                    print(tank[line], end="")
+                    cprint(tank[line], "cyan", end="")
                 except IndexError:
                     print(".", end="")
                 print("  ", end="")

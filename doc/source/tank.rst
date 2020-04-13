@@ -8,4 +8,6 @@ Module contents
    :members:
    :undoc-members:
    :show-inheritance:
-   :special-members:
+
+.. automodule:: tank.__main__
+   :members:

@@ -11,6 +11,7 @@ Welcome to tank's documentation!
    :caption: Contents:
 
    source/tank
+   source/modules
 
 
 

@@ -2,6 +2,8 @@
 
 from typing import List
 
+from termcolor import colored
+
 from tanks import Tank
 
 
@@ -44,10 +46,11 @@ class CommandHandler:
                 is_good_input = True
             except IndexError:
                 values = ", ".join([str(num) for num in range(len(commands))])
-                message = f"\nWrong value ! Possible values are: {values}."
+                error = f"\nWrong value ! Possible values are: {values}."
             except ValueError:
-                message = "\nYour command is not a digit !"
-            message += " Type your command: "
+                error = "\nYour command is not a digit !"
+            base_message = "Type your command: "
+            message = f"{colored(error, 'yellow')}\n{colored(base_message, 'red')}"
 
         tank = self.tanks[int(tank_index)]
         tank.move_to_(direction)

@@ -9,6 +9,7 @@ pylama = "*"
 pydocstyle = "*"
 mypy = "*"
 black = "*"
+pylint = "*"
 
 [packages]
 termcolor = "*"

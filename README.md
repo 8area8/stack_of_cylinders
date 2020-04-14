@@ -17,4 +17,4 @@ From the root of the repository:
 ## Usage
 
 From the root of the repository:
-- `python -m tank`
+- `python -m tanks`
